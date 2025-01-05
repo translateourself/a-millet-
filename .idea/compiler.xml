@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="millet-coupon" />
+        <module name="millet-ware" />
+        <module name="millet-member" />
+        <module name="millet-order" />
+        <module name="millet-product" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="product" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="millet-coupon" options="-parameters" />
+      <module name="millet-member" options="-parameters" />
+      <module name="millet-order" options="-parameters" />
+      <module name="millet-product" options="-parameters" />
+      <module name="millet-ware" options="-parameters" />
+      <module name="product" options="-parameters" />
+    </option>
+  </component>
+</project>
