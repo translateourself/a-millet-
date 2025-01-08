@@ -15,6 +15,8 @@
         <module>millet-order</module>
         <module>millet-product</module>
         <module>millet-ware</module>
+        <module>A-millet-end</module>
+        <module>renren-generator</module>
     </modules>
 
 </project>

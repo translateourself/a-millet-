@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="millet-product" />
+        <module name="gulimall-common" />
         <module name="millet-coupon" />
         <module name="millet-ware" />
+        <module name="renren-fast" />
         <module name="millet-member" />
         <module name="millet-order" />
-        <module name="millet-product" />
+        <module name="renren-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +28,8 @@
       <module name="millet-product" options="-parameters" />
       <module name="millet-ware" options="-parameters" />
       <module name="product" options="-parameters" />
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
     </option>
   </component>
 </project>
