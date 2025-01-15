@@ -3,6 +3,7 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/A-millet-end/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/millet-coupon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/millet-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/millet-member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/millet-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/millet-product/src/main/java" charset="UTF-8" />

@@ -18,7 +18,10 @@
 
     <dependencies>
 
-<!--        configuration center-->
+
+
+
+        <!--        configuration center-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>

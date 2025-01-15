@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="millet-product" />
+        <module name="millet-gateway" />
         <module name="gulimall-common" />
         <module name="millet-coupon" />
         <module name="millet-ware" />
@@ -23,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="millet-coupon" options="-parameters" />
+      <module name="millet-gateway" options="-parameters" />
       <module name="millet-member" options="-parameters" />
       <module name="millet-order" options="-parameters" />
       <module name="millet-product" options="-parameters" />
