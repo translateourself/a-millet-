@@ -30,6 +30,14 @@ public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    @RequestMapping("/member/all")
+    public R GetAllMembersMock() {
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("big sell");
+        return R.ok().put("coupon", couponEntity);
+    }
+
+
     /**
      * 列表
      */

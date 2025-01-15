@@ -3,6 +3,7 @@ package com.milletmall.milletmember.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import com.milletmall.milletmember.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,6 +30,18 @@ import com.milletmall.common.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    @Autowired
+    private CouponFeignService couponFeignService;
+
+    @RequestMapping("/getAllInformation")
+    public R getAllInformation(){
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setNickname("xxn");
+        R coupon = couponFeignService.GetAllMembersMock();
+        return R.ok().put("coupon", coupon.get("coupon") ).put("member",memberEntity);
+    }
+
 
     /**
      * 列表
