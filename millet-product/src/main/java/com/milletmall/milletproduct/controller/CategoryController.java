@@ -1,6 +1,8 @@
 package com.milletmall.milletproduct.controller;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,14 +32,19 @@ public class CategoryController {
     @Autowired
     private CategoryService categoryService;
 
-    /**
-     * 列表
+    /*
+     * function: query the items in the category and  show  it in tree
+     *
+     * @date 2025/1/16 20:36
+     * @param params
+     * @return R
      */
-    @RequestMapping("/list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = categoryService.queryPage(params);
+    @RequestMapping("/list/tree")
+    public R list(){
+        List<CategoryEntity> entities = categoryService.listWithTree();
 
-        return R.ok().put("page", page);
+
+        return R.ok().put("data", entities);
     }
 
 
