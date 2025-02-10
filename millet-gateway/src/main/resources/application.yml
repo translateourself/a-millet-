@@ -11,3 +11,18 @@ spring:
           uri: https://google.com/
           predicates:
             - Query=url,google
+
+        - id: product_route
+          uri: lb://millet-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/?(?<segment>.*), /$\{segment}
+
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/?(?<segment>.*), /renren-fast/$\{segment}
+

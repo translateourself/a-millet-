@@ -27,7 +27,7 @@ import com.milletmall.common.utils.R;
  * @date 2025-01-08 16:12:53
  */
 @RestController
-@RequestMapping("milletproduct/category")
+@RequestMapping("product/category")
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
